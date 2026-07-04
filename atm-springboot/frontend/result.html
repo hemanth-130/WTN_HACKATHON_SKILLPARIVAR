@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>Withdrawal Result</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ATM CASH DENOMINATION DISPENSER LOGIC</h1>
+
+<hr>
+
+<h2>Transaction Status</h2>
+
+<h3 th:text="${message}"></h3>
+
+<br>
+
+<h2>Requested Amount</h2>
+
+<h3>₹ <span th:text="${amount}"></span></h3>
+
+<hr>
+
+<h2>Dispensed Notes</h2>
+
+<table>
+
+<tr>
+
+<th>Denomination</th>
+
+<th>Count</th>
+
+</tr>
+
+<tr>
+
+<td>₹200</td>
+
+<td th:text="${notes200}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹100</td>
+
+<td th:text="${notes100}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹50</td>
+
+<td th:text="${notes50}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹20</td>
+
+<td th:text="${notes20}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹10</td>
+
+<td th:text="${notes10}"></td>
+
+</tr>
+
+</table>
+
+<br>
+
+<a href="/">
+
+<button>
+
+Home
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

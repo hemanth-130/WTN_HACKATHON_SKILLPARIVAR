@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+
+<meta charset="UTF-8">
+
+<title>ATM Status</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ATM CASH DENOMINATION DISPENSER LOGIC</h1>
+
+<hr>
+
+<h2>Current Cassette Status</h2>
+
+<table>
+
+<tr>
+
+<th>Denomination</th>
+
+<th>Available Notes</th>
+
+</tr>
+
+<tr>
+
+<td>₹200</td>
+
+<td th:text="${stock200}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹100</td>
+
+<td th:text="${stock100}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹50</td>
+
+<td th:text="${stock50}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹20</td>
+
+<td th:text="${stock20}"></td>
+
+</tr>
+
+<tr>
+
+<td>₹10</td>
+
+<td th:text="${stock10}"></td>
+
+</tr>
+
+</table>
+
+<br>
+
+<a href="/">
+
+<button>
+
+Back
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>

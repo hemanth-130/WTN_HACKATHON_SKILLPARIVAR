@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+
+<meta charset="UTF-8">
+<title>ATM Cash Denomination Dispenser</title>
+
+<link rel="stylesheet" th:href="@{/css/style.css}">
+
+</head>
+
+<body>
+
+<div class="container">
+
+<h1>ATM CASH DENOMINATION DISPENSER LOGIC</h1>
+
+<h3>Sector : Banking & Finance</h3>
+
+<h3>Domain : Banking</h3>
+
+<hr>
+
+<form action="/withdraw" method="post">
+
+<label>Enter Withdrawal Amount</label>
+
+<input
+type="number"
+name="amount"
+placeholder="Enter Amount"
+required>
+
+<br><br>
+
+<button type="submit">
+
+Withdraw Cash
+
+</button>
+
+</form>
+
+<br>
+
+<a href="/status">
+
+<button>
+
+ATM Status
+
+</button>
+
+</a>
+
+</div>
+
+</body>
+
+</html>
